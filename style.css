@@ -1,0 +1,161 @@
+/* Reset y Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.hero {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #4db6ac; /* Un verde azulado suave para contraste */
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background: #4db6ac;
+    color: #0f2027;
+}
+
+/* Secciones Generales */
+section {
+    padding: 60px 0;
+}
+
+.section-light {
+    background-color: #ffffff;
+}
+
+.section-dark {
+    background-color: #e9ecef;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 i {
+    color: #4db6ac;
+    margin-right: 10px;
+}
+
+/* Experiencia */
+.job-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2c5364;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.job-card h4 {
+    font-size: 1.3rem;
+    color: #2c5364;
+}
+
+.job-card .company {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.job-card ul {
+    list-style-position: inside;
+    padding-left: 10px;
+}
+
+.job-card li {
+    margin-bottom: 8px;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.skill-category h4 {
+    margin-bottom: 15px;
+    color: #2c5364;
+}
+
+.tag {
+    display: inline-block;
+    background: #2c5364;
+    color: white;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* Footer */
+footer {
+    background: #0f2027;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.small {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero h2 { font-size: 1.2rem; }
+    .skills-grid { grid-template-columns: 1fr; }
+}
